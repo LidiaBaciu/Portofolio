@@ -20,7 +20,6 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
   )
 }
 
-Blog.propTypes = {}
 Blog.propTypes = {
   title: PropTypes.string.isRequired,
   desc: PropTypes.string.isRequired,
