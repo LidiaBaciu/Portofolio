@@ -12,16 +12,18 @@ export default ({ data }) => {
     allStrapiBlogs: { nodes: blogs },
   } = data
   return (
-    <Layout>
+    <Layout showFooter={false}>
       <Hero />
-      <Services />
-      <Jobs />
-      <Projects projects={projects} title="Featured projects" showLink />
-      <Blogs blogs={blogs} title="Recent blogs" showLink />
     </Layout>
   )
 }
 
+/*
+<Services />
+      <Jobs />
+      <Projects projects={projects} title="Featured projects" showLink />
+      <Blogs blogs={blogs} title="Recent blogs" showLink />
+*/
 export const query = graphql`
   {
     allStrapiProjects(filter: { featured: { eq: true } }) {
