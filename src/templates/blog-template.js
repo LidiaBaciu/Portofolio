@@ -8,7 +8,7 @@ const ComponentName = ({ data }) => {
   return (
     <Layout>
       <section className="blog-template">
-        <div class="section-center">
+        <div className="section-center">
           <article className="blog-content">
             <ReactMarkdown source={content} />
           </article>
